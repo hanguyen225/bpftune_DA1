@@ -34,6 +34,7 @@ INSTALLPATH = $(installprefix)
 .PHONY: all clean
 
 all: srcdir docdir testdir
+	@echo "build successfully"
 	
 srcdir:
 	cd src; make
@@ -79,3 +80,5 @@ docinstall:
 	cd docs; make install
 pcpinstall:
 	cd src/pcp; make install
+
+
